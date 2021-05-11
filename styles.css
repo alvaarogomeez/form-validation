@@ -1,0 +1,142 @@
+:root
+{
+    --greenCheck: #2ecc71;
+    --redError: #e74c3c;
+}
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+body
+{
+    background-color: #9b59b6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+.remove
+{
+    display: none;
+}
+div.container
+{
+    background-color: #ffffff;
+    border-radius: 5px;
+    overflow: hidden;
+    -webkit-box-shadow: 31px 30px 44px -26px rgba(0,0,0,0.41);
+    -moz-box-shadow: 31px 30px 44px -26px rgba(0,0,0,0.41);
+    box-shadow: 31px 30px 44px -26px rgba(0,0,0,0.41);
+    width: 400px;
+    max-width: 100%;
+}
+div.container.success-account
+{
+    padding: 40px;
+}
+div.account-text
+{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border: 3px solid var(--greenCheck);
+    border-radius: 10px;
+}
+div.account-text.success
+{
+    display: flex;
+}
+small.account
+{
+    font-size: 18px!important;
+}
+div.header
+{
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #f0f0f0;
+    padding: 20px 40px;
+    text-align: center;
+}
+div.header h2
+{
+    margin: 0;
+}
+
+/** FORM **/
+form.form
+{
+    padding: 30px 40px;
+}
+div.form-control
+{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+div.form-control label
+{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+div.form-control input
+{
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    font-family: inherit;
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+}
+div.form-control.success input
+{
+    border-color: var(--greenCheck);
+}
+div.form-control.error input
+{
+    border-color: var(--redError);
+}
+div.form-control i
+{
+    visibility: hidden;
+    position: absolute;
+    top: 36px;
+    right: 10px;
+}
+div.form-control.success i.fa-check-circle
+{
+    visibility: visible;
+    color: var(--greenCheck);
+}
+div.form-control.error i.fa-exclamation-circle
+{
+    visibility: visible;
+    color: var(--redError);
+}
+div.form-control small
+{
+    visibility: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+div.form-control.error small
+{
+    visibility: visible;
+    color: var(--redError);
+}
+form.form button
+{
+    background-color: #8e44ad;
+    border: 2px solid #8e44ad;
+    color: #fff;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    font-family: inherit;
+}
